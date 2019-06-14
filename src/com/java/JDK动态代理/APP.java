@@ -9,7 +9,7 @@ public class APP {
         IUserDao target = new UserDao();
         // 给目标对象，创建代理对象
         IUserDao proxy = (IUserDao) new ProxyFactory(target).getProxyInstance();
-        // 执行方法   
+        // 执行方法 
         proxy.save();
     }
 }
