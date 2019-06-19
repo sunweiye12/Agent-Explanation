@@ -19,10 +19,10 @@ public class ProxyFactory{
                new InvocationHandler() { 
                    @Override
                     public Object invoke(Object proxy, Method method, Object[] args)throws Throwable {
-                        System.out.println("开始事务2");
+                        System.out.println("开始事务2喽");
                         //执行目标对象方法
                         Object returnValue = method.invoke(target, args);
-                        System.out.println("提交事务2");
+                        System.out.println("提交事务2喽");
                         return returnValue;
                     }
                 }
